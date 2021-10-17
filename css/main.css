@@ -3,9 +3,11 @@
 :root {
   --accent-color: #266bd1;
   --text-color: #151c22;
+  --btn-hover-color: #2c333a;
+
   --fontsize: 16px;
   --lineheight: 1.19;
-  --userfont: work-sans-st, sans-serif;
+  --userfont: work-sans-st, Arial, Helvetica, sans-serif;
   --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
 
@@ -170,6 +172,29 @@ body {
   width: 20px;
 }
 
+.btn {
+  display: inline-block;
+  font-weight: 700;
+  color: #fff;
+  padding: 27px 24px;
+  background-color: var(--text-color);
+  transition: background-color 250ms ease-out;
+}
+.btn:hover {
+  color: #fff;
+  background-color: var(--btn-hover-color);
+}
+
+.title {
+}
+
+.header-section {
+}
+.header-section__title {
+}
+.header-section__show {
+}
+
 /* header */
 
 .header {
@@ -198,4 +223,135 @@ body {
   flex-basis: 33.33%;
   display: flex;
   justify-content: flex-end;
+}
+
+/* promo */
+
+.promo {
+  background: #f1f2f4;
+}
+.promo__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.promo__content {
+  flex-basis: 0 0 365px;
+  margin-right: 50px;
+}
+.promo__title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #727a82;
+  margin-bottom: 25px;
+}
+.promo__text {
+  font-family: anton-st, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 128px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.promo__link-next {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 20px;
+  height: 37px;
+  background-image: url("../images/arrow-down.svg");
+  background-size: 10px 27px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5px;
+}
+.promo__media {
+  position: relative;
+  padding: 50px;
+}
+.promo__media::before,
+.promo__media::after {
+  content: "";
+  position: absolute;
+  width: 232px;
+  height: 176px;
+  background: url("../images/decor.png") center/cover no-repeat;
+}
+.promo__media::before {
+  top: 0;
+  left: 0;
+}
+.promo__media::after {
+  bottom: 0;
+  right: 0;
+}
+.promo__img {
+  position: relative;
+  width: 430px;
+  height: 517px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Bestsellers */
+
+.best {
+}
+.best__list {
+}
+.best__list-item {
+}
+.best__name {
+}
+.best__name-link {
+}
+.best__img {
+}
+.best__cost {
+}
+
+/* news */
+
+.news {
+}
+.notice {
+}
+.notice__content {
+}
+.notice__title {
+}
+.notice__time {
+}
+.notice__text {
+}
+.notice__link {
+}
+.notice__img {
+}
+
+/* Shop by category */
+
+.category {
+}
+.category__list {
+}
+.category__list-item {
+}
+.category__name {
+}
+.category__name-link {
+}
+.category__img {
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--text-color);
+}
+.footer__logo {
+}
+.footer__menu {
+}
+.footer__social {
 }
