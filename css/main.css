@@ -1,54 +1,195 @@
 /* USER VARIABLES SECTION */
 
 :root {
-	--accent: orange;
-	--fontsize: 16px;
-	--textcolor: #333;
-	--lineheight: 1.65;
-	--userfont: roboto-st, sans-serif;
-	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --accent-color: #266bd1;
+  --text-color: #151c22;
+  --fontsize: 16px;
+  --lineheight: 1.19;
+  --userfont: work-sans-st, sans-serif;
+  --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
-
-/* BOOTSTRAP SETTINGS SECTION */
-
-/* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
-.row, .row > * { --bs-gutter-x: 1.25rem; }
 
 /* FONTS LOAD SECTION */
 
-@font-face { src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: normal; }
-@font-face { src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: italic; }
-@font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: normal; }
-@font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: italic; }
+@font-face {
+  src: url("../fonts/WorkSans-Bold.woff2") format("woff2");
+  font-family: "work-sans-st";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../fonts/WorkSans-ExtraBold.woff2") format("woff2");
+  font-family: "work-sans-st";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../fonts/WorkSans-Medium.woff2") format("woff2");
+  font-family: "work-sans-st";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../fonts/WorkSans-Regular.woff2") format("woff2");
+  font-family: "work-sans-st";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../fonts/anton-regular-webfont.woff2") format("woff2");
+  font-family: "anton-st";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* GENERAL CSS SETTINGS */
 
-::placeholder { color: #666; }
-::selection { background-color: var(--accent); color: #fff; }
-input, textarea { outline: none; }
-input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
-input:required:valid, textarea:required:valid { border-color: green; }
+::placeholder {
+  color: #666;
+}
+::selection {
+  background-color: var(--accent);
+  color: #fff;
+}
+input,
+textarea {
+  outline: none;
+}
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+  border-color: red;
+}
+input:required:valid,
+textarea:required:valid {
+  border-color: green;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 250ms ease-out;
+}
+a:hover {
+  color: var(--accent-color);
+}
 
 body {
-	font-family: var(--userfont);
-	font-size: var(--fontsize);
-	line-height: var(--lineheight);
-	color: var(--textcolor);
-	min-width: 320px;
-	position: relative;
-	overflow-x: hidden;
+  font-family: var(--userfont);
+  font-weight: 400;
+  font-size: var(--fontsize);
+  line-height: var(--lineheight);
+  color: var(--text-color);
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
 }
 
-/* USER STYLES */
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
 
-.image {
-	max-width: 100%;
-	margin-bottom: var(--bs-gutter-x);
-	border-radius: 4px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.accent {
-	color: var(--accent);
-	font-weight: bold;
+.list-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: calc(1170px + 16px * 2);
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.site-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.site-menu__item {
+  margin-top: 10px;
+}
+.site-menu__item:not(:last-child) {
+  margin-right: 35px;
+}
+.site-menu__link {
+  display: block;
+  white-space: nowrap;
+}
+.site-menu__link:hover {
+  color: var(--accent-color);
+}
+
+.user-menu {
+  display: flex;
+  align-items: flex-end;
+}
+.user-menu__item:not(:last-child) {
+  margin-right: 35px;
+}
+.user-menu__link {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.user-menu__link--cart {
+  width: 20px;
+}
+
+/* header */
+
+.header {
+  padding: 14px 0 24px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.header__nav-menu {
+  flex-basis: 33.33%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header__nav-inner {
+  flex-basis: 33.33%;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.header__nav-user {
+  flex-basis: 33.33%;
+  display: flex;
+  justify-content: flex-end;
 }
