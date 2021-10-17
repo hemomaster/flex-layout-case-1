@@ -4,6 +4,9 @@
   --accent-color: #266bd1;
   --text-color: #151c22;
   --btn-hover-color: #2c333a;
+  --bg-color: #f1f2f4;
+  --light-gray: #727a82;
+  --black-color: #000;
 
   --fontsize: 16px;
   --lineheight: 1.19;
@@ -178,6 +181,7 @@ body {
 
 .btn {
   display: inline-block;
+  font-size: 16px;
   font-weight: 700;
   color: #fff;
   padding: 27px 24px;
@@ -254,7 +258,7 @@ body {
 /* promo */
 
 .promo {
-  background: #f1f2f4;
+  background: var(--bg-color);
 }
 .promo__container {
   position: relative;
@@ -269,7 +273,7 @@ body {
 .promo__title {
   font-size: 18px;
   font-weight: 400;
-  color: #727a82;
+  color: var(--light-gray);
   margin-bottom: 25px;
 }
 .promo__text {
@@ -321,8 +325,6 @@ body {
 
 /* Bestsellers */
 
-.best {
-}
 .best__header {
   margin-bottom: 70px;
 }
@@ -367,19 +369,51 @@ body {
 
 .news {
 }
+.news__header {
+  margin-bottom: 70px;
+}
 .notice {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.notice__inner {
+  flex: 0 0 470px;
+  padding: 34px 70px 34px 0;
+  background: url("../images/decor-news.png") center/cover no-repeat;
 }
 .notice__content {
+  padding: 50px 40px 30px;
+  background-color: var(--bg-color);
 }
 .notice__title {
+  font-size: 24px;
+  margin-bottom: 25px;
 }
 .notice__time {
+  display: inline-block;
+  font-size: 18px;
+  color: var(--black-color);
+  margin-bottom: 10px;
 }
 .notice__text {
+  font-size: 18px;
+  color: var(--light-gray);
+  margin-bottom: 25px;
 }
 .notice__link {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.notice__media {
+  flex-shrink: 1;
+  height: 370px;
+  margin: 0;
 }
 .notice__img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Shop by category */
