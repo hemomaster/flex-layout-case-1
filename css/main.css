@@ -124,8 +124,13 @@ body {
 }
 
 .logo {
-  font-weight: 800;
-  font-size: 24px;
+  display: inline-block;
+}
+.logo__img {
+  display: block;
+  width: 75px;
+  height: 17px;
+  object-fit: cover;
 }
 
 .site-menu {
@@ -185,6 +190,7 @@ body {
 .header__nav-inner {
   flex-basis: 33.33%;
   margin: 0 20px;
+  font-size: 0;
   text-align: center;
 }
 
