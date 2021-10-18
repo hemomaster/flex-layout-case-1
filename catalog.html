@@ -96,14 +96,16 @@
           </div>
         </div>
       </section>
-      <section class="container section catalog">
-        <h2 class="visualyhidden">Woman jackets Denim Collection Fall 2019</h2>
-        <div class="catalog__filter">
-          <button class="catalog__filter-btn" type="button">Filter by</button>
-          <ul class="list-reset catalog__filter-list">
-            <li class="catalog__filter-item">the best choice</li>
-            <li class="catalog__filter-item">ascending</li>
-            <li class="catalog__filter-item">descending</li>
+      <section class="container catalog">
+        <h2 class="visuallyhidden">Woman jackets Denim Collection Fall 2019</h2>
+        <div class="filter-options catalog__filter">
+          <button class="filter-options__btn active" type="button">
+            Filter by
+          </button>
+          <ul class="list-reset filter-options__list">
+            <li class="filter-options__item">the best choice</li>
+            <li class="filter-options__item">ascending</li>
+            <li class="filter-options__item">descending</li>
           </ul>
         </div>
         <ul class="list-reset catalog__list">
@@ -115,8 +117,8 @@
               class="card__img"
               alt="image"
               src="images/goods/woman-jackets-1.jpg"
-              width="270"
-              height="349"
+              width="243"
+              height="270"
             />
             <p class="card__cost">$120</p>
           </li>
@@ -128,8 +130,8 @@
               class="card__img"
               alt="image"
               src="images/goods/woman-jackets-2.jpg"
-              width="270"
-              height="349"
+              width="243"
+              height="270"
             />
             <p class="card__cost">$120</p>
           </li>
@@ -141,8 +143,8 @@
               class="card__img"
               alt="image"
               src="images/goods/woman-jackets-3.jpg"
-              width="270"
-              height="349"
+              width="243"
+              height="270"
             />
             <p class="card__cost">$120</p>
           </li>
@@ -154,8 +156,8 @@
               class="card__img"
               alt="image"
               src="images/goods/woman-jackets-4.jpg"
-              width="270"
-              height="349"
+              width="243"
+              height="270"
             />
             <p class="card__cost">$120</p>
           </li>
@@ -167,8 +169,8 @@
               class="card__img"
               alt="image"
               src="images/goods/woman-jackets-5.jpg"
-              width="270"
-              height="349"
+              width="243"
+              height="270"
             />
             <p class="card__cost">$120</p>
           </li>
@@ -180,8 +182,8 @@
               class="card__img"
               alt="image"
               src="images/goods/woman-jackets-6.jpg"
-              width="270"
-              height="349"
+              width="243"
+              height="270"
             />
             <p class="card__cost">$120</p>
           </li>
@@ -193,8 +195,8 @@
               class="card__img"
               alt="image"
               src="images/goods/woman-jackets-7.jpg"
-              width="270"
-              height="349"
+              width="243"
+              height="270"
             />
             <p class="card__cost">$120</p>
           </li>
@@ -206,85 +208,83 @@
               class="card__img"
               alt="image"
               src="images/goods/woman-jackets-8.jpg"
-              width="270"
-              height="349"
+              width="243"
+              height="270"
             />
             <p class="card__cost">$120</p>
           </li>
         </ul>
-        <div class="catalog__controls">
-          <div class="catalog__controls-progressbar progressbar">
-            Showing <span class="progressbar__from">9</span> of
-            <span class="progressbar__to">45</span> items
-            <div class="progressbar__value"></div>
-          </div>
-          <button class="btn catalog__controls__btn" type="button">
-            Load more
-          </button>
+        <div class="progressbar catalog__progressbar">
+          Showing <span class="progressbar__from">9</span> of
+          <span class="progressbar__to">45</span> items
+          <div class="progressbar__value"></div>
         </div>
+        <button class="btn catalog__btn" type="button">Load more</button>
       </section>
     </main>
-    <footer class="container footer">
-      <a class="logo footer__logo" href="#">
-        <img
-          class="logo__img"
-          src="images/logo-o.svg"
-          width="75"
-          height="17"
-          alt="logo company"
-        />
-      </a>
-      <ul class="list-reset footer__menu site-menu">
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="#">Shop</a>
-        </li>
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="#">Delivery</a>
-        </li>
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="#">Service</a>
-        </li>
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="#">Sitemap</a>
-        </li>
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="#">Contacts</a>
-        </li>
-      </ul>
-      <ul class="list-reset footer__social user-menu">
-        <li class="user-menu__item">
-          <a
-            class="user-menu__link user-menu__link--fb"
-            style="background-image: url('images/facebook.svg')"
-            href="#"
-            ><span class="visuallyhidden">facebook</span></a
-          >
-        </li>
-        <li class="user-menu__item">
-          <a
-            class="user-menu__link user-menu__link--insta"
-            style="background-image: url('images/instagram.svg')"
-            href="#"
-            ><span class="visuallyhidden">instagram</span></a
-          >
-        </li>
-        <li class="user-menu__item">
-          <a
-            class="user-menu__link user-menu__link--pt"
-            style="background-image: url('images/pinterest.svg')"
-            href="#"
-            ><span class="visuallyhidden">pinterest</span></a
-          >
-        </li>
-        <li class="user-menu__item">
-          <a
-            class="user-menu__link user-menu__link--tw"
-            style="background-image: url('images/twitter.svg')"
-            href="#"
-            ><span class="visuallyhidden">twitter</span></a
-          >
-        </li>
-      </ul>
+    <footer class="footer">
+      <div class="container footer__container">
+        <a class="logo footer__logo" href="#">
+          <img
+            class="logo__img"
+            src="images/logo-o.svg"
+            width="75"
+            height="17"
+            alt="logo company"
+          />
+        </a>
+        <ul class="list-reset footer__menu site-menu">
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Shop</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Delivery</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Service</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Sitemap</a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="#">Contacts</a>
+          </li>
+        </ul>
+        <ul class="list-reset footer__social user-menu">
+          <li class="user-menu__item">
+            <a
+              class="user-menu__link user-menu__link--fb"
+              style="background-image: url('images/facebook.svg')"
+              href="#"
+              ><span class="visuallyhidden">facebook</span></a
+            >
+          </li>
+          <li class="user-menu__item">
+            <a
+              class="user-menu__link user-menu__link--insta"
+              style="background-image: url('images/instagram.svg')"
+              href="#"
+              ><span class="visuallyhidden">instagram</span></a
+            >
+          </li>
+          <li class="user-menu__item">
+            <a
+              class="user-menu__link user-menu__link--pt"
+              style="background-image: url('images/pinterest.svg')"
+              href="#"
+              ><span class="visuallyhidden">pinterest</span></a
+            >
+          </li>
+          <li class="user-menu__item">
+            <a
+              class="user-menu__link user-menu__link--tw"
+              style="background-image: url('images/twitter.svg')"
+              href="#"
+              ><span class="visuallyhidden">twitter</span></a
+            >
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
